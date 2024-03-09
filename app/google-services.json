@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "386441645806",
+    "project_id": "meowconnect-6e236",
+    "storage_bucket": "meowconnect-6e236.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386441645806:android:170c3cf0ac01b2e644adff",
+        "android_client_info": {
+          "package_name": "com.meowconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAz5TncV1dxyI2et0P_5B4dFg4Ju0j7Cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
