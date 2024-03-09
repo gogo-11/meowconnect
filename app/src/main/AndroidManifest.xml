@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MeowConnect"
         tools:targetApi="31">
+
+        <!-- MainActivity е началният екран и има LAUNCHER intent-filter -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -19,10 +21,19 @@
             android:theme="@style/Theme.MeowConnect.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- LoginActivity е друга активност, която може да бъде стартирана от MainActivity -->
+        <activity android:name=".LoginActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.MeowConnect.NoActionBar">
+        </activity>
+
+        <!-- Останалите активности -->
+
     </application>
 
 </manifest>

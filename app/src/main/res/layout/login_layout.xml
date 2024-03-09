@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background">
+    <!--background image -->
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="187dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <Button
+        android:id="@+id/forgotPasswordButton"
+        android:layout_width="187dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="108dp"
+        android:text="Forgot Password?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="306dp"
+        android:layout_height="94dp"
+        android:text="Welcome to back. Who were you again?"
+        android:textColor="#424242"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="277dp"
+        android:layout_height="50dp"
+        android:background="#b1b1b3"
+        android:ems="10"
+        android:hint="Your password"
+        android:inputType="textPassword"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Password:"
+        android:textColor="#424242"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editPassword"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="67dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Username:"
+        android:textColor="#424242"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="277dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:background="#b1b1b3"
+        android:ems="10"
+        android:hint="Your username"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="67dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,30 +1,34 @@
 package com.meowconnect;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
 
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.navigation.NavigationView;
-
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.meowconnect.databinding.ActivityMainBinding;
-
 public class MainActivity extends AppCompatActivity {
-
-    private AppBarConfiguration mAppBarConfiguration;
-    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Задава layout-a за този Activity
+        setContentView(R.layout.login_register_anon);
 
+        // Създаване на Intent за стартиране на LoginActivity
+        Button loginButton = findViewById(R.id.loginButton);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Стартира LoginActivity
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Ако binding и DrawerLayout не се използват в този екран, премахнете следния код.
+        /*
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -48,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        */
     }
 
     @Override
@@ -59,8 +64,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
+        // Ако NavController не се използва в този екран, премахнете следния код.
+        /*
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+        */
+        return super.onSupportNavigateUp();
     }
 }
