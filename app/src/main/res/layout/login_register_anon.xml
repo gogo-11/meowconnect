@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/mainActivity_background">
+    <!--background image -->
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="187dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Login"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="187dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Register"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="377dp" />
+
+    <Button
+        android:id="@+id/anonymousButton"
+        android:layout_width="266dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Use as anonymous user"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="595dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="306dp"
+        android:layout_height="94dp"
+        android:text="Welcome to MeowConnect"
+        android:textColor="#424242"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
