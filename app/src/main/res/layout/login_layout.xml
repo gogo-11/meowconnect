@@ -10,22 +10,11 @@
 
 
     <Button
-        android:id="@+id/loginButton"
-        android:layout_width="187dp"
-        android:layout_height="63dp"
-        android:layout_gravity="center_horizontal"
-        android:text="Login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="484dp" />
-
-    <Button
         android:id="@+id/forgotPasswordButton"
         android:layout_width="187dp"
         android:layout_height="63dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="108dp"
+        android:layout_marginBottom="88dp"
         android:text="Forgot Password?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,11 +22,23 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="187dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/forgotPasswordButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="306dp"
         android:layout_height="94dp"
-        android:text="Welcome to back. Who were you again?"
+        android:text="Welcome back. Who were you again?"
         android:textColor="#424242"
         android:textSize="25dp"
         android:textStyle="bold"
@@ -53,19 +54,21 @@
         android:id="@+id/editPassword"
         android:layout_width="277dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="72dp"
         android:background="#b1b1b3"
         android:ems="10"
         android:hint="Your password"
         android:inputType="textPassword"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="405dp" />
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:ems="10"
         android:inputType="text"
         android:text="Password:"
@@ -73,8 +76,10 @@
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editPassword"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="67dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -86,23 +91,24 @@
         android:textColor="#424242"
         android:textSize="20dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editUsername"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.382"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="193dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editUsername"
         android:layout_width="277dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="20dp"
         android:background="#b1b1b3"
         android:ems="10"
         android:hint="Your username"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/editTextText2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="67dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
