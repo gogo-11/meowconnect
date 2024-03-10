@@ -8,7 +8,7 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/launcher_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.MeowConnect"
         tools:targetApi="31">
@@ -26,6 +26,12 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".SignUpActivity"
+            android:exported="true"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/Theme.MeowConnect.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
         <!-- LoginActivity е друга активност, която може да бъде стартирана от MainActivity -->
         <!-- Orientation Lock to portrait -->
         <!--
