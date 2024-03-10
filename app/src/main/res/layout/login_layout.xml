@@ -51,7 +51,8 @@
                 android:paddingLeft="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="216dp" />
+                tools:layout_editor_absoluteY="216dp"
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView5"
