@@ -16,17 +16,6 @@ public class MainActivity extends AppCompatActivity {
         // Задава layout-a за този Activity
         setContentView(R.layout.login_register_anon);
 
-        // Създаване на Intent за стартиране на LoginActivity
-        Button loginButton = findViewById(R.id.loginButton);
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Стартира LoginActivity
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
         // Ако binding и DrawerLayout не се използват в този екран, премахнете следния код.
         /*
         binding = ActivityMainBinding.inflate(getLayoutInflater());

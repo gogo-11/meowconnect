@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:background="#f59536"
-    android:paddingLeft="5dp">
+    android:background="#f59536">
 
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
@@ -35,25 +33,24 @@
                 android:fontFamily="@font/madimi_one_regular"
                 android:paddingLeft="4dp"
                 android:text="Email:"
-                android:textSize="24sp"
                 android:textColor="@color/black"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/editTextText2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
                 android:id="@+id/editTextText2"
                 android:layout_width="291dp"
                 android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
                 android:hint="user123@email.com"
                 android:inputType="text"
                 android:paddingLeft="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView5"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="225dp" />
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -66,40 +63,42 @@
                 android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.491"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText2"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
                 android:id="@+id/editTextTextPassword"
                 android:layout_width="291dp"
                 android:layout_height="40dp"
+                android:layout_marginBottom="40dp"
                 android:ems="10"
                 android:hint="Password"
                 android:inputType="textPassword"
-                tools:layout_editor_absoluteX="29dp"
-                tools:layout_editor_absoluteY="317dp"
+                app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonLogin"
                 android:layout_width="291dp"
                 android:layout_height="40dp"
-                android:layout_marginBottom="152dp"
-                android:fontFamily="@font/madimi_one_regular"
+                android:layout_marginBottom="80dp"
                 android:background="@drawable/button_custom"
+                android:fontFamily="@font/madimi_one_regular"
                 android:text="Login"
                 android:textAllCaps="false"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/singUpPrompt"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="241dp"
-                android:layout_height="70dp"
+                android:layout_width="239dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/madimi_one_regular"
                 android:text="MeowConnect"
                 android:textAlignment="center"
@@ -108,21 +107,18 @@
                 app:layout_constraintBottom_toTopOf="@+id/textView4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.504"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/singUpPrompt"
                 android:layout_width="262dp"
                 android:layout_height="30dp"
-                android:layout_marginBottom="24dp"
+                android:layout_marginBottom="36dp"
                 android:text="Don't have an account? Sign Up"
                 android:textAlignment="center"
                 android:textSize="15dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.503"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <ImageView
@@ -133,6 +129,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.611"
                 app:srcCompat="@drawable/placeholder_logo" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
